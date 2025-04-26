@@ -14,6 +14,31 @@ const VisualizationContainer = styled(Box)(({ theme }) => ({
   marginTop: 0,
 }));
 
+const ShootingBaysContainer = styled(Box)(({ theme }) => ({
+  width: '100%',
+  height: '20%',
+  position: 'relative',
+  display: 'flex',
+  justifyContent: 'space-between',
+  marginBottom: '16px',
+}));
+
+const ShootingBay = styled(Box)(({ theme, isSelected }) => ({
+  width: '48%',
+  height: '100%',
+  backgroundColor: '#0066CC',
+  opacity: isSelected ? 1 : 0.3,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  color: '#B22234',
+  fontSize: '0.75rem',
+  fontWeight: 'bold',
+  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  lineHeight: 1.5,
+  letterSpacing: '0.00938em',
+}));
+
 const CourtWrapper = styled(Box)(({ theme }) => ({
   width: '100%',
   height: '100%',
@@ -61,11 +86,14 @@ const HalfCourt = styled(Box, {
     },
     '& .key-area': {
       position: 'absolute',
-      bottom: '-25%',
+      bottom: '-30%',
       left: '50%',
+      WebkitTransform: 'translateX(-50%)',
+      MozTransform: 'translateX(-50%)',
+      msTransform: 'translateX(-50%)',
       transform: 'translateX(-50%)',
       width: '100%',
-      height: '134%',
+      height: '140%',
       backgroundColor: '#0066CC',
       opacity: (isSelected || selectedCourt === 'FULL COURT') ? 1 : 0.3,
       zIndex: 0,
@@ -157,6 +185,14 @@ const CenterCircle = styled(Box)(({ theme }) => ({
 const CourtVisualization = ({ selectedCourt }) => {
   return (
     <VisualizationContainer>
+      <ShootingBaysContainer>
+        <ShootingBay isSelected={selectedCourt === 'SHOOTING BAY 1' || selectedCourt === 'FULL COURT'}>
+          SHOOTING BAY 1
+        </ShootingBay>
+        <ShootingBay isSelected={selectedCourt === 'SHOOTING BAY 2' || selectedCourt === 'FULL COURT'}>
+          SHOOTING BAY 2
+        </ShootingBay>
+      </ShootingBaysContainer>
       <CourtWrapper>
         <CourtSection>
           <Grid />
