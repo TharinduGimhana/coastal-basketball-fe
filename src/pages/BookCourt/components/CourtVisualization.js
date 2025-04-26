@@ -3,6 +3,7 @@ import { Box, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 const VisualizationContainer = styled(Box)(({ theme }) => ({
+  marginTop: '100px',
   width: '100%',
   height: '50%',
   backgroundColor: '#1a1a1a',
@@ -10,8 +11,7 @@ const VisualizationContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  padding: theme.spacing(2),
-  marginTop: 0,
+  padding: '16px',
 }));
 
 const ShootingBaysContainer = styled(Box)(({ theme }) => ({
@@ -186,17 +186,17 @@ const CourtVisualization = ({ selectedCourt }) => {
   return (
     <VisualizationContainer>
       <ShootingBaysContainer>
-        <ShootingBay isSelected={selectedCourt === 'SHOOTING BAY 1' || selectedCourt === 'FULL COURT'}>
+        <ShootingBay isSelected={selectedCourt === 'SHOOTING BAY 1'}>
           SHOOTING BAY 1
         </ShootingBay>
-        <ShootingBay isSelected={selectedCourt === 'SHOOTING BAY 2' || selectedCourt === 'FULL COURT'}>
+        <ShootingBay isSelected={selectedCourt === 'SHOOTING BAY 2'}>
           SHOOTING BAY 2
         </ShootingBay>
       </ShootingBaysContainer>
       <CourtWrapper>
         <CourtSection>
           <Grid />
-          <HalfCourt isSelected={selectedCourt === 'HALF COURT 1'} isReversed={false} selectedCourt={selectedCourt}>
+          <HalfCourt isSelected={selectedCourt === 'HALF COURT 1' || selectedCourt === 'FULL COURT'} isReversed={false} selectedCourt={selectedCourt}>
             <div className="court-lines">
               <div className="three-point-line" />
               <div className="key-area" />
@@ -209,7 +209,7 @@ const CourtVisualization = ({ selectedCourt }) => {
         <CenterCircle />
         <CourtSection>
           <Grid />
-          <HalfCourt isSelected={selectedCourt === 'HALF COURT 2'} isReversed={true} selectedCourt={selectedCourt}>
+          <HalfCourt isSelected={selectedCourt === 'HALF COURT 2' || selectedCourt === 'FULL COURT'} isReversed={true} selectedCourt={selectedCourt}>
             <div className="court-lines">
               <div className="three-point-line" />
               <div className="key-area" />

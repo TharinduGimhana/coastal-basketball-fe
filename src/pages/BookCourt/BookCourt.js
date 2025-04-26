@@ -73,6 +73,98 @@ const VisualizationBox = styled(Box)(({ theme }) => ({
   height: '100%',
 }));
 
+const DayCell = styled(Box)(({ theme, isSelected, isToday }) => ({
+  flex: 1,
+  minWidth: '120px',
+  height: '60px',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  padding: theme.spacing(1),
+  backgroundColor: isSelected ? '#0066CC' : isToday ? '#333' : 'transparent',
+  color: isSelected ? '#fff' : isToday ? '#fff' : '#666',
+  cursor: 'pointer',
+  transition: 'all 0.2s ease',
+  position: 'relative',
+  margin: 0,
+  '&:hover': {
+    backgroundColor: isSelected ? '#0066CC' : '#333',
+    color: '#fff',
+  },
+  '&::after': {
+    content: '""',
+    position: 'absolute',
+    right: 0,
+    top: '10%',
+    bottom: '10%',
+    width: '1px',
+    backgroundColor: '#333',
+  },
+  '&:last-child::after': {
+    display: 'none',
+  },
+}));
+
+const TimeSlot = styled(Box)(({ theme, isSelected, isBooked, isPast }) => ({
+  flex: 1,
+  minWidth: '120px',
+  height: '60px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  padding: theme.spacing(1),
+  backgroundColor: isSelected ? '#0066CC' : isBooked ? '#333' : isPast ? '#1a1a1a' : 'transparent',
+  color: isSelected ? '#fff' : isBooked ? '#666' : isPast ? '#666' : '#fff',
+  cursor: isBooked || isPast ? 'not-allowed' : 'pointer',
+  transition: 'all 0.2s ease',
+  position: 'relative',
+  '&:hover': {
+    backgroundColor: isSelected ? '#0066CC' : isBooked || isPast ? 'transparent' : '#333',
+  },
+  '&::after': {
+    content: '""',
+    position: 'absolute',
+    right: 0,
+    top: '10%',
+    bottom: '10%',
+    width: '1px',
+    backgroundColor: '#333',
+  },
+  '&:last-child::after': {
+    display: 'none',
+  },
+}));
+
+const DayRow = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  gap: 0,
+  height: '60px',
+  borderBottom: '1px solid #333',
+  margin: 0,
+  padding: 0,
+}));
+
+const TimeRow = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  gap: '0px',
+  height: '60px',
+  borderBottom: '1px solid #333',
+  '&:last-child': {
+    borderBottom: 'none',
+  },
+}));
+
+const CalendarGrid = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  flexDirection: 'column',
+  gap: 0,
+  height: '100%',
+  overflow: 'hidden',
+  margin: 0,
+  padding: 0,
+}));
+
 const BookCourt = () => {
   const [selectedCourt, setSelectedCourt] = useState('');
   const [selectedTimeSlots, setSelectedTimeSlots] = useState([]);
