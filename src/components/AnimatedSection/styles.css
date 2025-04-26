@@ -1,0 +1,59 @@
+.animated-section-top {
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.animated-section-top.in-view {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.animated-section-right {
+    opacity: 0; 
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+}
+
+.animated-section-right.in-view {
+    font-size: 16px !important;
+    opacity: 1; 
+    transform: translateX(0); 
+}
+
+.animated-section-fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.animated-section-fade.in-view {
+    opacity: 1;
+}
+
+.typing-effect {
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for effect */
+    font-size: 24px; /* Adjust size as needed */
+    color: #333; /* Change text color */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow for better effect */
+}
+
+
+.animated-section-slide-up {
+    opacity: 0;
+    transform: translateY(100%); /* Slide up from below */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animated-section-slide-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    /* .animated-section-right {
+        opacity: 0; 
+        transform: translateX(0%);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out; 
+    } */
+}

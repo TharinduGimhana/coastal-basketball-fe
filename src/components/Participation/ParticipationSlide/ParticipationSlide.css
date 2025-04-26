@@ -1,0 +1,22 @@
+.participation-slide {
+    position: relative;
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1) 100%),
+    url('../../../assets/png/league_hero.jpg') !important;
+
+    padding-top: 600px;
+    height: auto;
+    background-position: center; /* Adjust 20px as needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .academy-slide-content {
+        position: absolute;
+    }
+}

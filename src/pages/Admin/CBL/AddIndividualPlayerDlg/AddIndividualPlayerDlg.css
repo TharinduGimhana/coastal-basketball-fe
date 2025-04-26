@@ -1,0 +1,26 @@
+
+.ant-modal.add-individual-player-modal {
+    top: 50px;
+    width: 85% !important;
+}
+.ant-modal.add-individual-player-modal .ant-modal-close {
+    /* display: none; */
+}
+.ant-modal.add-individual-player-modal .ant-modal-content {
+    border: 4px solid var(--whiteColor);
+    border-radius: 10px;
+}
+.ant-modal.add-individual-player-modal .ant-modal-header {
+    border-bottom: none;
+}
+.ant-modal.add-individual-player-modal .ant-modal-header .ant-modal-title {
+    font-size: 20px !important;
+}
+.ant-modal.add-individual-player-modal .ant-modal-body {
+    padding: 5px 24px 40px;
+}
+
+.ant-modal.add-individual-player-modal .ant-modal-footer {
+    border-top: none;
+    padding: 5px 0px 30px 0px;
+}

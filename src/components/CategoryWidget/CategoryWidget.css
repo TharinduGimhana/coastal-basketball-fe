@@ -1,0 +1,19 @@
+.category-item {
+    background-color: #29ABE220;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.category-item:hover {
+    background-color: #29ABE230;
+}
+.category-item.all {
+    border: 1px solid var(--mainColor);
+    background-color: #E3E3E304;
+    color: var(--mainColor);
+}
+.category-item.all:hover {
+    background-color: #E3E3E334;
+}

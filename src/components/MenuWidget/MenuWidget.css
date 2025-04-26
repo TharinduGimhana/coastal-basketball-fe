@@ -1,0 +1,41 @@
+.menu-widget {
+    /* padding: 20px ; */
+}
+.menu-header {
+    padding: 20px 15px 0px 20px;
+}
+.menu-item {
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.menu-item-icon {
+    width: 18px;
+    height: auto;
+}
+.menu-right-icon {
+    width: 18px;
+    height: auto;
+}
+.menu-close-icon {
+    width: 32px;
+    height: auto;
+    cursor: pointer;
+}
+.menu-close-icon:hover {
+    opacity: 0.9;
+}
+.menu-widget .ant-popover-content {
+    background-color: #fffffff5;
+    border-radius: 10px;
+}
+.menu-widget .ant-popover-inner {
+    background-color: #fffffff5;
+    border-radius: 10px;
+}
+.menu-widget .ant-popover-title {
+    border-bottom: none;
+}
+.menu-widget .ant-popover-placement-bottom > .ant-popover-content > .ant-popover-arrow, .ant-popover-placement-bottomLeft > .ant-popover-content > .ant-popover-arrow, .ant-popover-placement-bottomRight > .ant-popover-content > .ant-popover-arrow {
+    border-top-color: #fffffff5;
+    border-left-color: #fffffff5;
+}

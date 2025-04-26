@@ -1,0 +1,6 @@
+.tag-rect {
+    cursor: pointer;
+}
+.tag-rect:hover {
+    opacity: 0.95;
+}

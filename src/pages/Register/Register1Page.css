@@ -1,0 +1,650 @@
+.register-content {
+    padding-top: 200px;
+    margin-bottom: -355px;
+}
+.register-content  .ant-form-item {
+    margin-bottom: 0 !important;
+}
+.register-content .register-adv {
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.register-content .register-adv h1 {
+    font-family: gameDay-Wide;
+    font-size: 60px;
+    color: #003865;
+    line-height: 1.1;
+    margin-bottom: 0px;
+}
+.btn-cbl-content {
+    display: flex;
+    justify-content: center;
+}
+.btn-cbl-register {
+    min-width: 360px;
+    height:43px;
+    margin-bottom: 15px;
+    background: none !important;
+    border: 1px solid red;
+    color: red;
+    box-shadow: none;
+}
+.register-content .ant-select {
+    height: 44px !important;
+    width: 100%;
+}
+.btn-cbl-register:hover {
+    color: red !important;
+    box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.register-content .register-adv h1 span {
+    color: #A6182E;
+}
+
+.register-content .register-adv p {
+    font-family: ChakraPetch-SemiBold;
+    font-size: 16px;
+    color: #4D4D4D;
+    max-width: 1000px;
+    margin: 15px auto 30px;
+}
+
+.btn-register {
+    background-color: #AE2D41;
+    color: white;
+    outline: 1px solid #396587;
+    outline-offset: 3px;
+    border-radius: 0;
+    border: none;
+    padding: 5px 10px;
+}
+.signature-uploader {
+    border: 1px dashed #003865;
+    background-color: #f5f7fa;
+    padding: 10px;
+    height: 165px;
+    border-radius: 6px;
+    min-width: 260px;
+}
+.signature-uploader.error {
+    border: 1px solid #ff8787;
+}
+.signature-uploader svg {
+    color: var(--mainBlueColor);
+    font-size: 48px;
+}
+
+.btn-register:hover {
+    background-color: #7e343f;
+}
+
+.signup-logo,
+.register-logo {
+    margin-top: 50px;
+    width: 100%;
+    /* height: 100vh; Set the desired height of the image area */
+    overflow: hidden;
+    position: relative;
+    max-height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.register-logo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+.register2-logo {
+    background-image: url('../../assets/png/register-logo2.jpg');
+    margin-top: 90px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.register2-logo img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.1);
+    z-index: 0;
+    top: 60px;
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.logo-overlay .center-logo {
+    width: 50%;
+    height: auto;
+    z-index: 3;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.register-logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 47, 83, 0.6);
+    z-index: 1;
+}
+
+.register-form {
+    position: relative;
+    top: -200px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 250px;
+    z-index: 5;
+    background-color: white;
+}
+.signup-form {
+    top: -500px;
+    margin-bottom: 0px !important;
+    position: relative;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+}
+.signup-form h1 {
+    font-size: 44px;
+    color: white;
+    font-family: gameDay-Wide;
+    font-weight: 700;
+    text-align: center;
+}
+.register-form-title {
+    background-color: #A6182E;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    border: none;
+}
+
+.register-form-title h1 {
+    font-family: ChakraPetch-Regular;
+    font-size: 20px;
+    color: white;
+}
+.register-form-row.top {
+    margin: 0 !important;
+    padding: 30px 30px;
+    border: 1px solid #C4C4C4;
+}
+.register-form-row {
+    margin: 0 !important;
+    padding: 30px 30px;
+    border: 1px solid #C4C4C4;
+    border-top: none;
+}
+.signup-form-row {
+    margin: 0 !important;
+    padding: 0px 30px 0px 30px;
+}
+.signup-form-row h2,
+.register-form-row h2 {
+    color: #194C75;
+    font-family: ChakraPetch-SemiBold;
+}
+
+
+.upload-title {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    color: #003865;
+    text-align: left;
+}
+
+.ant-upload.ant-upload-drag {
+    border: 1px dashed #003865;
+    background-color: #f5f7fa;
+    padding: 30px;
+}
+
+.ant-upload-drag-icon {
+    color: #003865;
+    font-size: 24px;
+}
+
+.upload-instructions {
+    margin-top: 10px;
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    color: #4D4D4D;
+}
+
+.upload-instructions-title {
+    color: #A6182E;
+}
+
+.consent-title {
+    color: #003865;
+    /* Navy blue color for title */
+    font-family: 'gameDay-Wide', sans-serif;
+}
+
+.consent-subtitle {
+    color: #003865;
+    /* Navy blue color for subtitle */
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    margin-bottom: 10px;
+}
+
+.form-fields {
+    margin-top: 20px;
+}
+
+.form-input {
+    width: 100%;
+    margin-bottom: 17px;
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+}
+
+.signature-section {
+    display: flex;
+    margin-top: 10px;
+}
+
+.signature-upload {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.ant-upload.ant-upload-drag {
+    border: 1px dashed #003865;
+    background-color: #f5f7fa;
+    padding: 20px;
+}
+
+.ant-upload-drag-icon {
+    color: #003865;
+    font-size: 24px;
+}
+
+.ant-upload-text {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    color: #003865;
+}
+
+.date-picker-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-picker {
+    /* width: 200px; */
+    /* margin-top: 8px; */
+    display: block;
+}
+.signup-form-row h3,
+.register-form-row h3 {
+    color: #194C75;
+    font-family: ChakraPetch-SemiBold;
+    font-size: 16px;
+}
+.signup-form-row p,
+.register-form-row p {
+    font-family: ChakraPetch-Regular;
+    color: #8D8D8D;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fee-title {
+    color: #003865;
+    /* Navy blue color */
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    margin-bottom: 8px;
+}
+
+.fee-description {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    color: #4D4D4D;
+    margin-bottom: 20px;
+}
+
+.payment-select {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.payment-button {
+    width: 100%;
+    background-color: #003865;
+    color: white;
+    border: none;
+    border-radius: 0;
+    height: 45px;
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    white-space: normal;
+    line-height: 1.2;
+    /* padding: 5px 0px; */
+}
+
+.payment-button:hover {
+    background-color: #002C52 !important;
+    opacity: 0.8;
+}
+
+.payment-security-note {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    color: #A6192E;
+    /* Red color */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #A6192E;
+    color: white;
+    border: 1px solid #003865;
+    border-radius: 0;
+    height: 60px;
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+}
+
+.submit-button:hover {
+    background-color: #A6192E !important;
+    opacity: 0.8;
+}
+
+.custom-radio-group {
+    width: 100%;
+}
+
+.custom-radio-group .ant-radio-button-wrapper {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    border-radius: 0;
+    width: 100%;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 20px;
+    border: 1px solid #E0E0E0;
+    color: #D8D8D8;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.custom-radio-group .ant-radio-button-wrapper::before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #AE2D41;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.custom-radio-group.none .ant-radio-button-wrapper::before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #E0E0E0;
+    background-color: #E0E0E0;
+    transition: all 0.3s ease;
+}
+.custom-radio-group .ant-radio-button-wrapper-checked::before {
+    content: '✔';
+    /* Checkmark icon */
+    font-size: 12px;
+    color: #AE2D41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AE2D41;
+    border: none;
+}
+
+.custom-radio-group .ant-radio-button-wrapper-checked {
+    background-color: #AE2D41;
+    color: #FFF;
+    border-color: #AE2D41;
+    line-height: 1.4 !important;
+}
+
+.custom-radio-group .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked):hover {
+    border-color: #AE2D41;
+    color: #AE2D41;
+}
+
+.custom-radio-group.none .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked):hover {
+    border: 1px solid #E0E0E0;
+    color: #D8D8D8;
+}
+
+.custom-radio-group .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+    background-color: #7e343f;
+}
+.custom-radio-group.none .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+    background-color: #E0E0E0;
+}
+
+.custom-radio-group .ant-radio-button-wrapper-checked::before {
+    background-color: #AE2D41;
+}
+
+.custom-radio-group.none .ant-radio-button-wrapper-checked::before {
+    background-color: #E0E0E0;
+}
+
+.custom-radio-group .ant-radio-button-wrapper:hover::before {
+    border-color: #AE2D41;
+}
+
+.custom-radio-group.none .ant-radio-button-wrapper:hover::before {
+    border-color: #E0E0E0;
+}
+
+.custom-radio-group .ant-radio-button-wrapper:hover::before {
+    border-color: #AE2D41;
+    /* Change the border color of the circle when hovered */
+    background-color: #AE2D41;
+    /* Optionally change the background color on hover */
+}
+
+.custom-radio-group.none .ant-radio-button-wrapper:hover::before {
+    border-color: #E0E0E0;
+    /* Change the border color of the circle when hovered */
+    background-color: #E0E0E0;
+    /* Optionally change the background color on hover */
+}
+
+.custom-radio-group .ant-radio-button-wrapper-checked::before {
+    background-color: #FFF;
+    /* Ensure the circle stays filled when checked */
+    border-color: #AE2D41;
+}
+
+.custom-radio-group.none .ant-radio-button-wrapper-checked::before {
+    background-color: #E0E0E0;
+    /* Ensure the circle stays filled when checked */
+    border-color: #E0E0E0;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+    color: white;
+
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+    /* border-color: #AE2D41; */
+}
+
+
+
+.row-padding-top {
+    padding-top: 30px;
+}
+.wavier-liability {
+    margin-bottom: 10px;
+}
+
+
+
+
+.ant-select-selection-placeholder {
+    padding: 5px !important;
+}
+
+.input-condition,
+.input-medication {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 0 10px;
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+}
+
+.custom-radio-with-list {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    /* Let it expand based on content */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    border: 1px solid #E0E0E0;
+    color: #003865;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.custom-radio-with-list ul {
+    margin: 5px 0 0 20px;
+    /* Indent for the list */
+    padding-left: 10px;
+    list-style-type: disc;
+    /* Add bullet points */
+}
+
+.custom-radio-with-list li {
+    font-size: 12px;
+    /* Slightly smaller font for list items */
+    color: #4D4D4D;
+}
+
+.custom-radio-with-list .ant-radio-button-wrapper-checked {
+    background-color: #AE2D41;
+    color: white;
+    border-color: #AE2D41;
+}
+
+.register2-liability {
+    height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .register-form-row {
+        padding: 10px;
+        row-gap: 4px !important;
+    }
+
+    .ant-form-item {
+        margin-bottom: 16px !important;
+    }
+
+    .signup-input {
+        height: 55px;
+    }
+
+    .signup-form-row {
+        row-gap: 0px !important;
+    }
+    .signup-form-row h2 {
+        font-size: 17px;
+    }
+
+    .register-form {
+        top: -100px;
+        width: 80%;
+        margin-bottom: 350px;
+    }
+    .signup-form {
+        top: -105px !important;
+    }
+    .custom-radio-group .ant-radio-button-wrapper {
+        padding-right: 22px;
+        padding-left: 10px !important;
+        line-height: 1.1;
+        height: 44px;
+    }
+
+    .register-content {
+        padding-top: 95px;
+        margin-bottom: -400px !important;
+    }
+
+    .register-content .register-adv h1 {
+        font-size: 30px;
+    }
+    .register-logo {
+        margin-top: 50px;
+    }
+    .register2-logo {
+        margin-top: 50px;
+    }
+ 
+    .register-photograph {
+        height: 100px !important;
+    }
+    
+    .register2-liability {
+        height: 130px !important;
+    }
+
+    .payment-button {
+        height: 55px;
+    }
+
+    .custom-radio-with-list {
+        height: 80px !important;   
+    }
+
+    .row-padding-top {
+        padding-top: 15px !important;
+    }
+    
+}

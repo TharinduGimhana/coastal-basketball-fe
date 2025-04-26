@@ -1,0 +1,85 @@
+.CBC-slide {
+  padding: 600px 20px 50px 20px;
+  height: auto;
+  /* Set a height based on the image size */
+  background-image: url('../../../assets/png/flag.jpg');
+  /* Replace this with the correct path */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Content wrapper to center the text */
+.CBC-slide-content {
+  padding: 0 20px;
+}
+
+/* Subtitle styling */
+.slide-subtitle {
+
+  font-size: 30px;
+  color: white;
+  background-color: #B0687E;
+  /* Background color similar to the one in the image */
+  padding: 10px 20px;
+  display: inline-block;
+  /* Inline-block to fit content */
+  text-align: center;
+  /* Center the text */
+  text-transform: uppercase;
+  /* Capitalize text */
+  font-weight: bold;
+
+  /* Add an outline to match the image */
+  outline: 3px solid #B0687E;
+  /* Outline color with some transparency */
+  outline-offset: 5px;
+  /* Creates space between the border and the outline */
+}
+
+/* Main title styling */
+.slide-title {
+  font-size: 72px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: -30px;
+}
+
+.slide-title span {
+  color: #A5192E;
+  /* Red color for the CBC abbreviation */
+}
+
+/* Description styling */
+.slide-description {
+  font-size: 16px;
+  /* font-weight: bold; */
+  font-family: ChakraPetch-Regular;
+  margin-top: 30px;
+  color: #4D4D4D;
+  max-width: 850px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 600 !important;
+}
+
+@media (max-width: 768px) {
+  .slide-description {
+    padding: 0px 20px;
+  }
+
+  .slide-title {
+    font-size: 38px !important;
+    line-height: 1.1;
+    margin-top: 35px;
+  }
+
+  .CBC-slide {
+    padding: 600px 20px 30px 20px;
+  }
+}

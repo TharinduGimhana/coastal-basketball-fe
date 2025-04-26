@@ -1,0 +1,28 @@
+.admin-dashbaord {
+    
+}
+
+.admin-dashbaord .ant-card {
+    box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 21px 0 rgba(0, 0, 0, 0.1) !important;
+    text-align: center;
+    /* width: 100%;  */
+}
+
+.admin-dashbaord .ant-card:hover {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 21px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.admin-season-selection .ant-select-arrow {
+    top: 70% !important;
+}
+
+.admin-season-selection .ant-select-selector {
+    width: 250px !important;
+}
+
+.admin-season .ant-input[disabled] {
+    color: black;
+  }
+  .txt-count {
+    font-size: 24px;
+  }

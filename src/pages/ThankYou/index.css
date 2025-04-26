@@ -1,0 +1,29 @@
+.thanks-content {
+    height:200px;
+    margin-top:94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+
+.image-container {
+    width: 100%;
+    height: calc(100% - 1500px);
+    overflow: hidden;
+    position: relative;
+}
+  
+.image-container img {
+    margin-bottom: -5px;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: top;
+}

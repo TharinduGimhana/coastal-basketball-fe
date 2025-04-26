@@ -1,0 +1,15 @@
+.child-widget {
+    padding: 15px;
+    border: 1px solid #bcc5d3;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.child-select-txt {
+    font-family: semiBoldFont;
+    text-align: center;
+    font-size: 20px;
+    color: var(--mainRedColor);
+    margin-bottom: 10px;
+}

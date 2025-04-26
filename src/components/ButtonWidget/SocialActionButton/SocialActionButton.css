@@ -1,0 +1,11 @@
+.social-action-button {
+  text-align: center;
+  font-size: 13px;
+}
+.social-action-button:hover {
+  color: var(--mainColor);
+  stroke: var(--mainColor);
+  fill: var(--mainColor);
+  cursor: pointer;
+  transition: all 0.5s;
+}

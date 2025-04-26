@@ -1,0 +1,155 @@
+.partici-sliders-content {
+    max-width: 1600px;
+    padding: 40px 50px 50px 50px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.partici-sliders-content img {
+    width: 80% !important;
+    margin:10px auto;
+}
+
+.partici-sliders-content .ant-card-body {
+    max-height: 380px;
+    padding: 0;
+}
+.partici-sliders-content .slick-dots li button:before {
+    color: black !important;
+}
+
+.partici-sliders-content.partici-sliders-content {
+    padding: 40px 50px 10px 50px;
+}
+
+.partici-sliders-content h3 {
+    font-size: 20px;
+    font-family: ChakraPetch-Regular;
+    color: white;
+    font-weight: 600;
+}
+
+.participating-teams-content {
+    margin-top: 50px;
+}
+
+.partici-sliders-content p {
+    font-family: ChakraPetch-Regular;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+
+.partici-sliders-content .btn-next:focus {
+    background-color: var(--darkPurple) !important;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid #97AFC1;
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+
+.left-arrow {
+    margin-right: 0px !important;
+}
+
+.btn-carousel-direction {
+    display: flex;
+    align-items: flex-start;
+}
+
+.line {
+    width: 15px;
+    height: 1px;
+    border: 1px solid #97AFC1;
+
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #97AFC1;
+    border-radius: 50%;
+}
+
+.button-wrapper {
+    position: relative;
+}
+
+.button-wrapper.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1px;
+    right: -1px;
+    bottom: 0;
+    border: 1px solid #fff;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.participating-teams {
+    margin-top: -100px;
+}
+
+.partici-carousel-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* @media screen and (max-width: 1608px) {
+    .partici-sliders-content .ant-card-body {
+        height: 790px;
+        padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 1308px) {
+    .partici-sliders-content .ant-card-body {
+        height: 710px;
+        padding: 0;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    .participating-teams-content {
+        margin-top: 30px;
+        padding-bottom: 20px !important;
+    }
+
+    .partici-sliders-content .ant-card-cover img {
+        width: 50% !important;
+        margin: auto;
+    }
+
+    .participating-teams {
+        margin-top: -50px;
+    }
+
+    .btn-carousel-direction {
+        margin-top: 20px;
+        margin-bottom: 0px;
+
+    }
+
+    .partici-sliders-content {
+        padding: 0px 20px !important;
+        max-width: 445px;
+    }
+}

@@ -1,0 +1,73 @@
+.base-membership-top-rect {
+    max-width: 1300px;
+    margin: auto;
+    padding: 40px;
+}
+
+.membership-base-content .ant-card-body {
+    padding: 0 !important;
+}
+
+.membership-desc-p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 16px !important;
+}
+
+.membership-base-content {
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #D6DFE6;
+    margin-top: 30px;
+}
+
+.membership-base-player-img {}
+
+.base-membership-info h2 {
+    padding: 0 30px;
+    font-size: 30px;
+    font-family: semiBoldFont;
+    font-weight: 100;
+    color: #223366;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.base-membership-info p {
+    font-family: ChakraPetch-Regular;
+    max-width: 700px;
+    padding: 0 30px;
+    font-size: 20px;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .base-membership-top-rect {
+        padding: 30px;
+    }
+
+    .order-left {
+        order: 2;
+    }
+
+    .order-right {
+        order: 1;
+    }
+
+    .cbc-type-title {
+        font-size: 42px !important;
+    }
+
+    .membership-base-content {
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .base-membership-info h2 {
+        font-size: 20px;
+    }
+    .base-membership-item {
+        
+    }
+}

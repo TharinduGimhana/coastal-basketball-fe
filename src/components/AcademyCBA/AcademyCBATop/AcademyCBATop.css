@@ -1,0 +1,81 @@
+
+.academy-slide {
+    padding-top: 600px;
+    height: auto;
+    background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 100%),
+        url('../../../assets/png/Hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.academy-slide .slide-subtitle {
+    font-size: 30px;
+    color: white;
+    background-color: #B0687E;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: 3px solid #B0687E;
+    outline-offset: 5px;
+}
+
+.academy-slide .slide-title {
+    line-height: 1.1;
+    font-size: 56px;
+    font-weight: 400 !important;
+    color: black;
+    font-family: gameDay-Wide;
+}
+
+.slide-title span {
+    color: #A5192E;
+}
+
+.academy-slide .slide-description {
+    font-size: 18px;
+    font-family: ChakraPetch-Regular;
+    margin-top: 30px;
+    color: #4D4D4D;
+    max-width: 850px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 38px auto;
+    font-weight: 600 !important;
+}
+.program-desc-title {
+    font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+    .academy-desc-widget {
+        margin-top: 225px;
+        padding: 20px;
+    }
+    .academy-slide .slide-title {
+        font-size: 32px !important;
+    }
+
+    .academy-slide .slide-subtitle {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .academy-slide .slide-description {
+        margin: auto;
+        text-align: center;
+        width: 90%;
+    }
+
+    .academy-slide {
+        position: relative;
+        padding-bottom: 30px;
+    }
+}

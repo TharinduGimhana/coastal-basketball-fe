@@ -1,0 +1,33 @@
+.join-rect {
+    background-color: var(--navyColor);
+    background-image: url('../../../assets/png/join_back.png');
+    width: 100%;
+    height: 500px; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.join-main {
+    margin: auto;
+    max-width: 1600px;
+}
+.join-user-img {
+    width: 100%;
+    height: 500px;
+}
+@media screen and (max-width: 768px) {
+    .join-rect {
+        background-color: var(--navyColor);
+        background-image: none;
+        width: 100%;
+        height: auto;
+    }
+    .join-back-img {
+        width: 300px;
+        height: auto;
+    }
+    .join-user-img {
+        width: 200px;
+        height: auto;
+    }
+}

@@ -1,0 +1,48 @@
+.icon-widget {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    opacity: 1;
+    transition: 200ms all ease;
+}
+
+.icon-widget:hover {
+    opacity: 0.95;
+}
+
+.nav-logo {
+    width: 200px !important;
+    height: auto;
+}
+
+.app-button {
+    width: 140px !important;
+    height: auto;
+}
+
+@media screen and (max-width: 1050px) {
+    .nav-logo {
+        width: 150px !important;
+        height: auto;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav-logo {
+        width: 145px !important;
+        height: auto;
+
+    }
+
+    .custom-drawer .icon-widget {
+        display: none;
+    }
+
+    .app-button {
+        width: 90px !important;
+        height: auto;
+        margin: 5px;
+    }
+}

@@ -1,0 +1,61 @@
+.ant-modal.add-corporate-partner-modal {
+    top: 150px;
+    width: 55% !important;
+}
+
+.ant-modal.add-corporate-partner-modal .ant-modal-close {
+    /* display: none; */
+}
+
+.ant-modal.add-corporate-partner-modal .ant-modal-content {
+    border: 4px solid var(--whiteColor);
+    border-radius: 10px;
+}
+
+.ant-modal.add-corporate-partner-modal .ant-modal-header {
+    border-bottom: none;
+}
+
+.ant-modal.add-corporate-partner-modal .ant-modal-header .ant-modal-title {
+    font-size: 20px !important;
+}
+
+.ant-modal.add-corporate-partner-modal .ant-modal-body {
+    padding: 5px 24px 12px;
+}
+
+.ant-modal.add-corporate-partner-modal .ant-modal-footer {
+    border-top: none;
+    padding: 5px 0px 30px 0px;
+}
+
+.add-user-button {
+    width: 200px !important;
+    padding: 6px 30px;
+    color: white;
+}
+
+.add-user-button:hover {}
+
+.upload-logo-button {
+    border-radius: 4px;
+    color: var(--blackColor);
+    background-color: #FFFFFF;
+    border: 1px solid #d9d9d9;
+    padding: 5px 20px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 200ms all ease;
+}
+
+.upload-logo-button.error {
+    border: 1px solid red;
+}
+
+.upload-logo-button:hover {
+    opacity: 1;
+}
+
+.upload-logo-button:active {
+    opacity: 0.95;
+}

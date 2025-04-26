@@ -1,0 +1,375 @@
+.auth-form {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #dedede;
+}
+
+.signup-form.auth {
+    width: 90% !important;
+    max-width: 1200px;
+}
+
+.register-form.signup-form {
+    width: 90% !important;
+    max-width: 1200px;
+    top: -500px;
+}
+
+.label-txt {
+    color: #194C75 !important;
+    margin-bottom: 2px;
+    text-align: left !important;
+    margin-top: 0px !important;
+}
+
+.client-auth-content {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    margin-top: 150px;
+}
+
+.client-auth-card {
+    padding: 50px 30px;
+    width: 480px;
+    margin: auto;
+}
+
+.ant-spin .ant-spin-dot-spin {
+    color: white;
+}
+
+.client-signup {
+    padding: 0px 30px;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/* .client-auth-input {
+    height: 54px !important;
+} */
+
+.verify-send-btn {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.client-auth-content .ant-input-affix-wrapper {
+    height: 44px;
+    padding: 0px 11px;
+}
+
+.client-auth-text {
+    color: rgba(0, 0, 0, 0.88) !important;
+}
+
+.client-otp-card .ant-input {
+    border-radius: unset;
+    width: 50px;
+}
+
+.client-otp-card .ant-input:focus {
+    box-shadow: none;
+}
+
+
+.client-otp-card {
+    width: 480px;
+    padding: 50px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.otp-input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.resend-container {
+    margin-top: 20px;
+}
+
+.btn-back-icon {
+    position: absolute;
+    left: 30%;
+    border: none;
+    background: none;
+    color: black;
+}
+
+.btn-back-signin-icon {
+    top: 250px;
+}
+
+.btn-back-signup-icon {
+    top: 50px;
+}
+
+.btn-back-forgot-icon {
+    top: 170px;
+}
+
+.register-form-title {
+    position: relative;
+}
+
+.register-form-back {
+    position: absolute;
+    top: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.register-form.signup-form .ant-form-item-control-input {
+    text-align: center;
+}
+
+.signup-form-personal {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+}
+
+.signup-form-order .payment {
+    border: 1px solid #dedede;
+    padding: 20px;
+}
+
+.signup-form-order .payment-title {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.signup-form-order .payment-total {
+    color: white;
+    font-weight: 600;
+    background-color: var(--mainBlueColor);
+    padding: 16px;
+    margin-top: 10px;
+}
+
+.payment-check-rect {
+    margin-top: 10px;
+}
+
+.pay-check {}
+
+.payment-total-label {
+    font-size: 18px;
+}
+
+.payment-label {
+    font-size: 14px;
+    font-family: "ChakraPetch-Regular";
+}
+
+.payment-amount {
+    font-size: 16px;
+}
+
+.btn-add-more {
+    font-family: "ChakraPetch-Regular";
+    border: 1px solid var(--mainBlueColor);
+    color: var(--mainBlueColor);
+    padding: 16px 28px;
+}
+
+.btn-add-more:hover {
+    color: #1b4c98 !important;
+    border: 1px solid #1b4c98 !important;
+}
+
+.txt-kid {
+    font-family: "ChakraPetch-Regular";
+    color: var(--mainBlueColor);
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.signup-custom-radio-group {
+    width: 100%;
+}
+
+.signup-custom-radio-group .ant-radio-button-wrapper {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    border-radius: 0;
+    width: 100%;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding-left: 20px;
+    border: 1px solid #E0E0E0;
+    color: #807979;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.signup-custom-radio-group .ant-radio-button-wrapper::before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #807979;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.signup-custom-radio-group.none .ant-radio-button-wrapper::before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #E0E0E0;
+    background-color: #807979;
+    transition: all 0.3s ease;
+}
+
+.signup-custom-radio-group .ant-radio-button-wrapper-checked::before {
+    content: '✔';
+    /* Checkmark icon */
+    font-size: 12px;
+    color: var(--mainBlueColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #807979;
+    border: none;
+}
+
+.signup-custom-radio-group .ant-radio-button-wrapper-checked {
+    background-color: var(--mainBlueColor);
+    color: #ffffff;
+    line-height: 1.4 !important;
+}
+
+.signup-custom-radio-group .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked):hover {
+    border-color: #E0E0E0;
+    color: var(--mainBlueColor);
+}
+
+.signup-custom-radio-group.none .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked):hover {
+    border: 1px solid #E0E0E0;
+    color: #D8D8D8;
+}
+
+.signup-custom-radio-group .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+    background-color: var(--mainBlueColor);
+}
+
+.signup-custom-radio-group.none .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+    background-color: #E0E0E0;
+}
+
+.signup-custom-radio-group .ant-radio-button-wrapper-checked::before {
+    background-color: var(--mainBlueColor);
+}
+
+.signup-custom-radio-group.none .ant-radio-button-wrapper-checked::before {
+    background-color: #E0E0E0;
+}
+
+.signup-custom-radio-group .ant-radio-button-wrapper:hover::before {
+    /* border-color: var(--mainBlueColor); */
+}
+
+.signup-custom-radio-group.none .ant-radio-button-wrapper:hover::before {
+    border-color: #E0E0E0;
+}
+
+.signup-custom-radio-group .ant-radio-button-wrapper:hover::before {
+    border-color: #E0E0E0;
+    /* Change the border color of the circle when hovered */
+    background-color: #E0E0E0;
+    /* Optionally change the background color on hover */
+}
+
+.signup-custom-radio-group.none .ant-radio-button-wrapper:hover::before {
+    border-color: #E0E0E0;
+    /* Change the border color of the circle when hovered */
+    background-color: #E0E0E0;
+    /* Optionally change the background color on hover */
+}
+
+.signup-custom-radio-group .ant-radio-button-wrapper-checked::before {
+    background-color: #E0E0E0;
+    /* Ensure the circle stays filled when checked */
+    /* border-color: var(--mainBlueColor); */
+}
+
+.signup-custom-radio-group.none .ant-radio-button-wrapper-checked::before {
+    background-color: #E0E0E0;
+    /* Ensure the circle stays filled when checked */
+    border-color: #E0E0E0;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+    color: white;
+
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+    /* border-color: var(--mainBlueColor); */
+}
+
+.signup-form-personal .block {
+    padding: 10px;
+}
+
+.signup-form-personal .block .title {
+    font-size: 16px;
+    color: var(--mainBlueColor);
+}
+
+@media screen and (max-width: 768px) {
+    .auth-form {
+        width: 100%;
+        margin: auto;
+    }
+
+    .btn-back-icon {
+        left: 15%;
+    }
+
+    .btn-back-signin-icon {
+        top: 80px;
+    }
+
+    .btn-back-forgot-icon {
+        top: 125px;
+    }
+
+}
+
+@media screen and (max-width: 451px) {
+    .client-auth-card {
+        width: 90%;
+        margin: auto;
+    }
+}

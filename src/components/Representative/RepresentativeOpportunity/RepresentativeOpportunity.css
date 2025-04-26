@@ -1,0 +1,18 @@
+.represent-left-content .ant-card-body {
+    padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .order-left {
+        order: 2;
+    }
+
+    .order-right {
+        order: 1;
+    }
+
+    .cbc-type-title {
+        font-size: 42px !important;
+
+    }
+}

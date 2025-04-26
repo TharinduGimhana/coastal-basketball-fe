@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="%PUBLIC_URL%/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="320x320" href="%PUBLIC_URL%/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="480x480" href="%PUBLIC_URL%/favicon-48x48.png">
+  <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest">
+  <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg" color="#5bbad5">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="coastal basketball" content="coastal basketball" />
+  <meta name="description" content="Basketball programs in Coastal, Bunbury, Eaton, South West, and Australind" />
+  <meta name="keywords"
+    content="Coastal Basketball, Bunbury Basketball, Eaton Basketball, South West Basketball, Australind Basketball" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Coastal Basketball</title>
+  <style>
+    #gc-scoreboard-widget-t3b9 {
+      width: 100%;
+      z-index: 9999;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin: auto;
+    }
+
+    @font-face {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    @font-face {
+      font-family: "semiBoldFont";
+      src: url("/assets/fonts/Gameday-Light.otf");
+    }
+
+    @font-face {
+      font-family: "gameDay";
+      src: url("/assets/fonts/Gameday-Bold.otf");
+    }
+
+    @font-face {
+      font-family: "gameDay-Wide";
+      src: url("/assets/fonts/Gameday-Wide.otf");
+    }
+
+    @font-face {
+      font-family: "gameDay-Light";
+      src: url("/assets/fonts/Gameday-Light.otf");
+    }
+
+    @font-face {
+      font-family: "ChakraPetch-Regular";
+      src: url("/assets/fonts/ChakraPetch-Regular.ttf");
+    }
+
+    @font-face {
+      font-family: "ChakraPetch-Bold";
+      src: url("/assets/fonts/ChakraPetch-BoldItalic.ttf");
+    }
+
+    @font-face {
+      font-family: "ChakraPetch-SemiBold";
+      src: url("/assets/fonts/ChakraPetch-SemiBold.ttf");
+    }
+
+    .ant-layout {
+      background-color: var(--backgroundColor) !important;
+    }
+
+    :root {
+      --mainColor: #29ABE2;
+      --mainRedColor: #A6192E;
+      --mainBlueColor: #003865;
+      --backgroundColor: #F6F6F6;
+      --whiteColor: #FFFFFF;
+      --blackColor: #181717f7;
+      --greyColor: #424242;
+      --lightGreyColor: #e0e0e1;
+      --darkGreyColor: #2C2C2C;
+      --borderDarkColor: #707070;
+      --navyColor: #1A345F;
+      --darlBlueColor: #485F76;
+      --darkPurple: #01457C;
+      --redColor: #C81732;
+      --greenColor: #00742C;
+      --orangeColor: #F68b43;
+      --yellowColor: #FAC600;
+      --borderColor: #E3E3E3;
+
+      /* --primaryFont: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+    }
+
+    ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: var(--greyColor);
+      opacity: 1;
+      /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: var(--greyColor);
+    }
+
+    ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: var(--greyColor);
+    }
+
+    body {
+      background-color: var(--whiteColor) !important;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root" style="min-height: 100vh; color: var(--blackColor)"></div>
+
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+      
+    -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MY5LZDCZEG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-MY5LZDCZEG'); // Replace with your Tracking ID
+  </script>
+  <script src="https://widgets.gc.com/static/js/sdk.v1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.participation-content {
+    background: url('../../../assets/png/league_footer.jpg') center/cover no-repeat;
+}
+
+.participation-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.part-join-content {
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .participation-content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(255, 0, 0, 0.6);
+        z-index: 1;
+    }
+
+    .part-join-content {
+        padding-top: 60px;
+        padding-bottom: 5px !important;
+    }
+
+    .participation-content {
+        padding-bottom: 60px;
+        /* height: 22vh; */
+    }
+}

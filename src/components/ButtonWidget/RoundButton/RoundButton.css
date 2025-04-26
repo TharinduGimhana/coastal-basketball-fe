@@ -1,0 +1,109 @@
+.round-button-rect {
+    display: inline-block;
+    width: 115px;
+    padding: 8px 24px;
+    margin: 2px;
+    text-align: center;
+    color: var(--whiteColor);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 200ms all ease;
+    background-color: #a7192f;
+    font-family: ChakraPetch-Regular !important;
+    font-weight: 700;
+}
+
+.round-button-rect:focus-visible {
+    outline: none;
+}
+
+.blue-round {
+    background-color: var(--mainColor);
+}
+
+.nav-menu-section {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.green-round {
+    background-color: var(--greenColor);
+    border: none;
+}
+
+.dark-blue-round {
+    background-color: var(--navyColor);
+}
+
+.store-img {
+    width: 22px;
+    height: auto;
+}
+
+.store-icon {
+    background: var(--whiteColor);
+    color: var(--mainColor);
+    width: 180px
+}
+
+.blue-border {
+    border-color: var(--mainColor);
+    color: var(--mainColor);
+    font-weight: 600;
+}
+
+.rectangle-button {
+    width: auto;
+    border-color: var(--mainColor);
+    border-radius: 10px;
+    color: var(--whiteColor);
+    background-color: var(--mainColor);
+    font-weight: 600;
+}
+
+.cart-alert-button {
+    width: 110px;
+}
+
+@media screen and (max-width: 1050px) {
+    .round-button-rect {
+        width: 100px;
+        padding: 4px 16px;
+        margin: 2px;
+    }
+
+    .nav-menu-item {
+        padding: 1px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .round-button-rect {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .store-icon {
+        width: 120px
+    }
+
+    .store-img {
+        width: 13px;
+        height: auto;
+    }
+
+    .cart-alert-button {
+        width: 75px;
+        border-radius: 10px;
+        padding: 2px 5px;
+        margin: 5px;
+    }
+
+    .green-round {
+        width: 100%;
+        padding: 5px;
+        margin: 0px;
+    }
+}

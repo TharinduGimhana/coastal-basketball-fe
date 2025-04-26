@@ -1,0 +1,33 @@
+.text-button-rect {
+    display: inline-block;
+    border: 1px solid var(--mainColor);
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: var(--whiteColor);
+    cursor: pointer;
+    transition: 200ms all ease;
+}
+.text-button-rect:focus-visible {
+    outline: none;
+}
+.control-icon {
+    width: 26px;
+    height: 26px;
+    padding: 1px;
+}
+@media screen and (max-width: 768px) {
+    .text-button-rect {
+        border-radius: 16px;
+        padding: 6px 12px;
+        margin: 8px;
+        font-size: 13px;
+    }
+    .control-icon {
+        width: 20px !important;
+        height: 20px !important;
+        padding: 0px 2px !important;
+        border-radius: 4px !important;
+    }
+}

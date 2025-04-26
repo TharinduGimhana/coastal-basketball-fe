@@ -1,0 +1,31 @@
+.description-rect {
+    text-align: left;
+}
+
+.description-bottom {
+    width: 50px;
+    height: 2px;
+    background-color: var(--greyColor);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.bottom-title {
+    line-height: 1.4;
+    display: flex;
+    white-space: nowrap; /* Prevent line breaks */
+    align-items: center; /* Aligns items vertically */
+}
+
+
+@media screen and (max-width: 768px) {
+    .responsive-branch {
+        text-align: center;
+    }
+
+    .bottom-title {
+        justify-content: center;
+        text-align: center;
+    }
+}

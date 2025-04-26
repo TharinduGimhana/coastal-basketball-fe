@@ -1,0 +1,358 @@
+.main-rect {
+    max-width: 1600px;
+    margin: auto;
+}
+ .ant-dropdown-menu {
+    top: 0;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background: var(--lightGreyColor);
+    opacity: 1;
+}
+.mr-10 {
+    margin-right: 30px !important;
+}
+.client-admin-content .ant-form-item-label {
+    width: 100px !important;
+}
+.login-nav {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+}
+
+.nav.nav-active {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    margin: auto;
+    z-index: 999;
+    transition: all 0.35s ease-in-out 0s;
+    /* box-shadow: rgb(43 83 135 / 8%) 0px 0px 8px 0px; */
+}
+
+.login-nav.nav-active {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    margin: auto;
+    background-color: var(--whiteColor);
+    z-index: 999;
+    transition: all 0.35s ease-in-out 0s;
+    box-shadow: rgb(43 83 135 / 8%) 0px 0px 8px 0px;
+}
+
+/* ex */
+.nav-rect {
+    max-width: 1600px;
+    margin: auto;
+    padding: 10px 50px;
+}
+
+.custom-drawer {
+    background: transparent;
+}
+
+.custom-drawer .ant-drawer-content {
+    background: var(--whiteColor);
+}
+
+.custom-drawer .ant-drawer-body {
+    padding: 10px;
+    margin: auto;
+}
+
+.custom-drawer .ant-drawer-close {
+    color: var(--whiteColor);
+}
+
+.nav-drawer {
+    margin: auto;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-rect {
+    padding: 10px 50px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.competitions-letter a {
+    color: black !important;
+    font-family: ChakraPetch-Regular;
+}
+
+/* ex */
+.nav-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 17px;
+    font-family: ChakraPetch-Regular;
+    color: var(--blackColor);
+    opacity: 0.6;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 800;
+
+}
+.nav-menu-item .ant-col {
+    font-family: ChakraPetch-Regular !important;
+    font-size: 17px !important;
+    /* box-sizing: border-box; */
+}
+.login-nav-menu-item {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: semiBoldFont;
+    color: var(--mainColor);
+    opacity: 0.6;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.nav-menu-item:hover {
+    opacity: 1;
+}
+
+.nav-menu-item.active {
+    opacity: 1;
+}
+
+.footer {
+    background: rgb(26, 25, 25);
+    padding: 30px 30px;
+}
+
+.footer-menu-item {
+    font-size: 15px;
+    color: rgb(214, 213, 213);
+    padding: 2px;
+    margin: 2px;
+    opacity: 1;
+    font-family: ChakraPetch-Regular;
+    letter-spacing: 1px;
+    margin-top: 8px;
+}
+.footer-menu-item a{
+    color: rgb(214, 213, 213);
+}
+.footer-menu-item:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.footer-menu-item.active {
+    color: white;
+    cursor: auto;
+    opacity: 1;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: ChakraPetch-Regular;
+    margin-bottom: 10px;
+}
+
+.footer-divider {
+    border-top: 2px solid var(--borderDarkColor);
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 13px;
+    color: var(--whiteColor);
+    padding: 10px;
+}
+
+.footer-menu-text {
+    font-size: 14px;
+    color: var(--whiteColor);
+    margin-left: 2px;
+    margin-right: 2px;
+    opacity: 1;
+    font-family: semiBoldFont;
+    letter-spacing: 1px;
+}
+
+.footer-menu-small-text {
+    font-size: 13px;
+    color: var(--whiteColor);
+}
+
+.nav-sub-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .nav-sub-items {
+
+} */
+.nav-sub-menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: ChakraPetch-Regular;
+    font-weight: 500;
+}
+.vertical-center-modal .ant-modal {
+  top: 50% !important; /* Center vertically */
+  transform: translateY(-50%) !important; 
+}
+
+.vertical-center-modal .ant-modal-content {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.bg-contact-details h4 {
+}
+
+.bg-contact-details p {
+    color: rgb(23, 209, 23);
+    font-size: 1rem;
+}
+
+.modal-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+.modal-header {
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-button {
+    background-color: #007BFF; /* primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.modal-button:hover {
+    background-color: #0056b3; /* darker shade on hover */
+}
+
+.modal-cancel {
+    background: none;
+    color: #999;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.nav-active-item.active {
+    color: black;
+    font-weight: 600;
+}
+
+.backtop-button {
+    position: fixed; /* Keeps it visible in the viewport */
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it appears on top */
+  }
+  
+@media screen and (max-width: 920px) {
+    .nav-logo {
+        width: 150px !important;
+    }
+
+    .nav-menu-item {
+        font-size: 14px !important;
+    }
+
+    .nav-menu-item .ant-col {
+        font-size: 14px !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        background: var(--lightGreyColor);
+        padding: 10px;
+    }
+
+    .login-nav {
+        background-color: transparent;
+        padding: 15px;
+    }
+
+    .nav-menu-item {
+        margin-top: 0px;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .img-logo-footer {
+        width: 100px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-rect {
+        padding: 10px 20px;
+    }
+
+    .footer-menu-item {
+        font-size: 16px;
+        padding: 1px;
+        margin: 1px;
+    }
+
+    .nav-sub-items {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-item-gap {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .footer-menu-text {
+        font-size: 13px;
+        margin-left: 2px;
+        margin-right: 1px;
+        letter-spacing: 1px;
+    }
+
+    .footer-menu-small-text {
+        margin-left: 1px;
+    }
+
+    .custom-drawer .ant-drawer-body {
+        padding: 30px 10px;
+        margin: auto;
+    }
+    .modal-container {
+        width: 100%;
+    }
+}

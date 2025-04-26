@@ -1,0 +1,19 @@
+.brand-rect {
+    padding: 50px;
+    max-width: 1600px;
+    margin: auto;
+}
+.brand-img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .brand-rect {
+        padding: 20px;
+    }
+    .brand-img {
+        width: 60px;
+        height: auto;
+    }
+}

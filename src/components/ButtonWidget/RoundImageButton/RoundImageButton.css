@@ -1,0 +1,51 @@
+.round-image-button-rect {
+    display: inline-block;
+    width: 140px;
+    border: 1px solid var(--whiteColor);
+    border-radius: 24px;
+    padding: 8px 24px;
+    margin: 10px;
+    text-align: center;
+    color: var(--whiteColor);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 200ms all ease;
+}
+.round-image-button-rect:focus-visible {
+    outline: none;
+}
+.blue-round {
+    background-color: var(--mainColor);
+}
+.dark-blue-round {
+    background-color: var(--navyColor);
+}
+.store-img {
+    width: 22px;
+    height: auto;
+}
+.store-icon {
+    background: var(--whiteColor);
+    color: var(--mainColor);
+    width: 180px
+}
+.blue-border {
+    border-color: var(--mainColor);
+    color: var(--mainColor);
+    font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+    .round-image-button-rect {
+        border-radius: 16px;
+        padding: 6px 12px;
+        margin: 8px;
+        font-size: 13px;
+    }
+    .store-icon {
+        width: 120px
+    }
+    .store-img {
+        width: 13px;
+        height: auto;
+    }
+}

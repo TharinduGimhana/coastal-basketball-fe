@@ -1,0 +1,105 @@
+.auth-content .ant-modal-centered .ant-modal {
+  top: 230px !important;
+}
+
+.btn-season-item.red {
+  min-width: 360px;
+  margin-bottom: 15px;
+  background: none !important;
+  border: 1px solid red;
+  border-radius: 6px;
+  padding: 10px;
+  color: var(--mainRedColor);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.btn-season-item.blue {
+  min-width: 360px;
+  margin-bottom: 15px;
+  background: none !important;
+  border: 1px solid var(--mainBlueColor);
+  border-radius: 6px;
+  padding: 10px;
+  color: var(--mainBlueColor);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+
+.btn-season-item.red:hover {
+  color: var(--mainRedColor) !important;
+  box-shadow:
+    5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.btn-season-item.blue:hover {
+  color: var(--mainBlueColor) !important;
+  box-shadow:
+    5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.btn-season-item.disabled-button {
+  cursor: not-allowed;
+  background-color: #d9d9d9 !important;
+  /* Change to your preferred disabled color */
+  border-color: #d9d9d9 !important;
+  color: rgba(0, 0, 0, 0.25) !important;
+  pointer-events: none;
+  /* This ensures hover effects are disabled */
+}
+
+.btn-season-item.disabled-button:hover {
+  background-color: #d9d9d9 !important;
+  /* Ensuring hover does not change the color */
+  border-color: #d9d9d9 !important;
+  color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.season-select-modal .ant-modal {
+  top: 55% !important;
+  transform: translateY(-50%) !important;
+  width: 700px !important;
+  margin: auto;
+}
+
+.order-text {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.order-text.red {
+  border: 1px solid var(--mainRedColor);
+  color: var(--mainRedColor);
+}
+
+.order-text.blue {
+  border: 1px solid var(--mainBlueColor);
+  color: var(--mainBlueColor);
+}
+
+@media screen and (max-width: 768px) {
+  .btn-season-item.blue {
+    width: auto;
+    height: auto;
+    min-width: auto;
+  }
+
+  .btn-season-item.red {
+    width: auto;
+    height: auto;
+    min-width: auto;
+  }
+
+  .season-order-txt {
+    text-align: center;
+  }
+}

@@ -1,0 +1,28 @@
+.chat-open-widget {
+    background-color: #29ABE240;
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+}
+.chat-open-content {
+    padding: 15px;
+}
+.chat-open-button {
+    position: relative;
+    background-color: var(--mainColor);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    color: var(--whiteColor);
+    cursor: pointer;
+}
+.chat-open-description {
+    width: 200px;
+    font-size: 13px;
+}
+.chat-right {
+    color: var(--whiteColor);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

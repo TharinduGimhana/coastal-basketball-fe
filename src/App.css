@@ -1,0 +1,706 @@
+/* ::-webkit-scrollbar {
+    width: 12px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0);
+}  */
+
+/* @font-face {
+    font-family: 'semiBoldFont';
+    src: url("/assets/fonts/GamedayBold.otf") format('opentype');
+    font-weight: 600;
+} */
+
+body {
+    font-family: sans-serif;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-13 {
+    font-size: 13px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-17 {
+    font-size: 17px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.font-30 {
+    font-size: 30px;
+}
+
+.font-36 {
+    font-size: 36px;
+}
+
+.font-42 {
+    font-size: 32px;
+}
+
+.font-48 {
+    font-size: 42px;
+}
+
+.font-56 {
+    font-size: 56px;
+}
+
+.font-76 {
+    font-size: 76px;
+}
+
+.bold {
+    font-family: semiBoldFont;
+    letter-spacing: 1px;
+    color: #1a1919;
+    font-weight: 700;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.grey {
+    color: #d1d0cf;
+}
+
+.white {
+    color: var(--whiteColor);
+}
+
+.blue {
+    color: var(--mainColor);
+}
+
+.darkBlue {
+    color: var(--darlBlueColor);
+}
+
+.darkPurple {
+    color: var(--darkPurple) !important;
+}
+
+.black {
+    color: var(--darkGreyColor);
+}
+
+.red {
+    color: var(--redColor);
+}
+
+.mt--15 {
+    margin-top: -15px;
+}
+
+.mt-5 {
+    margin-top: 8px;
+}
+
+.pb-10 {
+    padding-bottom: 20px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-40 {
+    margin-top: 50px;
+}
+
+.mb-50 {
+    margin-bottom: 100px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-120 {
+    margin-top: 120px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+.p-50 {
+    padding: 50px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pr-20 {
+    padding-right: 30px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: end;
+}
+
+.text-left {
+    text-align: start;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bg-grey {
+    background-color: #F4F4F4;
+}
+
+.ant-divider-horizontal {
+    margin: 10px 0;
+}
+
+.home-input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+
+.ant-notification {
+    z-index: 9999999;
+}
+
+.phone-input {
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    padding: 9px 6px;
+    font-size: 14px;
+}
+
+.phone-input-error {
+    border: 1px solid #ff8787;
+    border-radius: 6px;
+    padding: 9px 6px;
+    font-size: 14px;
+}
+
+
+
+.phone-input.PhoneInput {
+    display: flex;
+}
+
+.phone-input .PhoneInputInput {
+    border: none;
+    outline: none;
+}
+
+.typo-blue {
+    font-weight: 500;
+    font-family: gameDay-Wide !important;
+    color: #003866;
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.typo-red {
+    font-family: gameDay-Wide !important;
+    font-weight: 500;
+    font-size: 36px;
+    color: #A7192F;
+}
+
+.ant-card .ant-card-cover>* {
+    border-radius: 8px;
+}
+
+.typo-general {
+    font-family: ChakraPetch-Regular;
+}
+
+.phone-input .PhoneInputInput:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.phone-input.PhoneInput.PhoneInput--focus {
+    border-color: var(--mainColor);
+    border-right-width: 1px !important;
+    transition: all 0.3s;
+}
+
+.phone-input.PhoneInput.PhoneInput:hover {
+    border-color: var(--mainColor);
+    border-right-width: 1px !important;
+    transition: all 0.3s;
+    box-shadow: 0 0 0 2px rgb(96 168 220 / 20%);
+}
+
+.phone-input.PhoneInput .PhoneInputInput[disabled] {
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar but allow scrolling for Firefox */
+body {
+    scrollbar-width: none;
+}
+
+
+
+html,
+body {
+    max-width: 100%;
+}
+
+.ant-typography,
+.ant-typography a {
+    color: var(--mainBlueColor) !important;
+}
+
+.ant-typography:focus,
+.ant-typography a:focus,
+.ant-typography:hover,
+.ant-typography a:hover {
+    color: var(--mainBlueColor) !important;
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+.ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+    border-color: var(--mainBlueColor) !important;
+}
+
+.ant-btn-variant-solid {
+    background: var(--mainBlueColor);
+}
+
+.ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled):hover {
+    background: var(--mainBlueColor);
+}
+
+.acss-9mi5l3.ant-btn-primary:not([disabled]):not(.ant-btn-dangerous)::before {
+    background: linear-gradient(135deg, var(--mainBlueColor), #04befe) !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: var(--mainBlueColor) !important;
+    border-color: var(--mainBlueColor) !important;
+}
+
+.ant-checkbox-wrapper-checked:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-inner,
+.ant-checkbox-checked:not(.ant-checkbox-disabled):hover .ant-checkbox-inner {
+    background-color: var(--mainBlueColor) !important;
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner {
+    background-color: var(--mainBlueColor) !important;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child {
+    border-color: var(--mainBlueColor) !important;
+}
+
+/* 
+body {
+    overflow: hidden;
+  }
+  
+  .container {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
+  .container::-webkit-scrollbar {
+    display: none; 
+  } */
+
+.backtop-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    z-index: 1000;
+}
+
+
+
+.PhoneInputCountrySelect {
+    display: none;
+}
+
+.PhoneInputCountryIcon {
+    width: 33px !important;
+    height: 20px !important;
+}
+
+.PhoneInputInput {
+    border: none;
+    background: transparent;
+}
+
+.PhoneInput:focus-visible {
+    outline: none;
+}
+
+.PhoneInputInput:focus-visible {
+    outline: none;
+}
+
+.common-input {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 6px 6px;
+    font-size: 12px;
+    height: 44px;
+}
+
+.ant-picker-input {
+    height: 30px;
+}
+
+.common-input-error {
+    border: 1px solid #ff8787;
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding: 6px 6px;
+    font-size: 12px;
+    height: 44px;
+}
+
+.ant-select-selection-placeholder {
+    text-align: left;
+}
+
+.player-file-error .ant-upload.ant-upload-drag {
+    border: 1px solid #ff8787;
+}
+
+.common-input .ant-input {
+    background: #FFFFFF;
+}
+
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+    background: #FFFFFF;
+}
+
+.common-select:hover .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+    background: #ffffff;
+}
+
+.common-select {
+    width: 100%;
+    background: #FFFFFF;
+    font-size: 12px;
+}
+
+.common-select:hover {
+    border-color: #8bc4e8;
+    border-right-width: 1px !important;
+}
+
+.common-select:focus {
+    border-color: #8bc4e8;
+    border-right-width: 1px !important;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgb(96 168 220 / 20%);
+}
+
+.common-select-error {
+    width: 100%;
+    border: 1px solid #ff8787 !important;
+    border-radius: 4px;
+    background: #FFFFFF;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1050px) {
+    .typo-blue {
+        font-size: 32px;
+    }
+
+    .typo-red {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .font-56 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        /* overflow-x: hidden; */
+    }
+
+    .font-12 {
+        font-size: 12px;
+    }
+
+    .font-13 {
+        font-size: 12px;
+    }
+
+    .font-14 {
+        font-size: 13px;
+    }
+
+    .font-15 {
+        font-size: 14px;
+    }
+
+    .font-16 {
+        font-size: 15px;
+    }
+
+    .font-17 {
+        font-size: 16px;
+    }
+
+    .font-18 {
+        font-size: 14px;
+    }
+
+    .font-20 {
+        font-size: 15px;
+    }
+
+    .font-24 {
+        font-size: 17px;
+    }
+
+    .font-30 {
+        font-size: 22px;
+    }
+
+    .font-36 {
+        font-size: 28px;
+    }
+
+    .font-42 {
+        font-size: 29px;
+    }
+
+    .font-48 {
+        font-size: 27px;
+    }
+
+    .font-56 {
+        font-size: 34px;
+    }
+
+    .mt-10 {
+        margin-top: 5px;
+    }
+
+    .mt-20 {
+        margin-top: 10px;
+    }
+
+    .mt-30 {
+        margin-top: 15px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-60 {
+        margin-top: 30px;
+    }
+
+    .mt-90 {
+        margin-top: 45px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mt-120 {
+        margin-top: 60px;
+    }
+
+    .ml-10 {
+        margin-left: 5px;
+    }
+
+    .p-20 {
+        padding: 10px;
+    }
+
+    .p-30 {
+        padding: 15px;
+    }
+
+    .p-40 {
+        padding: 20px;
+    }
+
+    .p-50 {
+        padding: 25px;
+    }
+
+    .pl-50 {
+        padding-left: 25px;
+    }
+
+    .pr-50 {
+        padding-right: 25px;
+    }
+
+    .pr-30 {
+        padding-right: 15px;
+    }
+
+    .pb-30 {
+        padding-bottom: 15px;
+    }
+
+    .home-input {
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+
+    .typo-blue {
+        font-size: 24px;
+    }
+
+    .typo-red {
+        font-size: 24px;
+    }
+}

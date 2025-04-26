@@ -1,0 +1,82 @@
+.jcblintro-content {
+    padding: 50px 0;
+    padding-bottom: 0px;
+}
+
+.jcbl-background {
+    background-image: url('../../../assets/png/jcbl-background.jpg');
+    /* Replace this with the correct path */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.jcbl-join-content {
+    padding-top: 80px !important;
+}
+
+.jcblintro-content h1 {
+    font-family: gameDay-Wide;
+    font-size: 40px;
+    color: #A7192F;
+    text-align: center;
+}
+
+.jcblintro-col {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.jcblintro-col-1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(167, 25, 47, 0.6);
+}
+
+.jcblintro-col-1 h2 {
+    font-family: gameDay-Wide;
+    font-size: 40px;
+    color: white;
+}
+
+.jcblintro-col-1 p {
+    font-family: ChakraPetch-Regular;
+    color: #D39CA1;
+    font-size: 24px;
+    padding: 10px 70px;
+    margin: 0 auto;
+}
+
+.jcblintro-col .jcbl-center-box {
+    margin: 0 100px;
+    padding: 70px 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.jcblintro-col .jcbl-center-box h2 {
+    color: #0f3452;
+    font-family: gameDay-Wide;
+    font-size: 40px;
+}
+
+.jcblintro-col .jcbl-center-box p {
+    margin-top: -20px;
+    color: rgb(17, 17, 17);
+    font-family: ChakraPetch-Regular;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .jcbl-join-content {
+        padding-top: 60px !important;
+    }
+}

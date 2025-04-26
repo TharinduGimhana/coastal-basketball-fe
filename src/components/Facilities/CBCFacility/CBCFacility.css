@@ -1,0 +1,70 @@
+.CBC-content {
+    padding: 50px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.typo-blue {
+    font-weight: bold;
+    font-family: gameDay-Wide;
+    color: #003866;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.typo-red {
+    font-family: gameDay-Wide;
+    font-weight: bold;
+    font-size: 50px;
+    color: #A7192F;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: ChakraPetch-Regular;
+}
+
+.court-content {
+    padding: 15px 0px;
+    margin-bottom: 20px;
+    border: 1px solid #D6DFE6;
+}
+
+.courts-info {
+    text-align: left;
+}
+
+.courts-info h2 {
+    padding: 0 30px;
+    font-size: 30px;
+    font-family: gameDay;
+    font-weight: 100;
+    color: #223366;
+    margin-bottom: 10px;
+}
+
+.courts-info p {
+    font-family: ChakraPetch-Regular;
+    max-width: 700px;
+    padding: 0 30px;
+    font-size: 20px;
+    color: #555;
+}
+
+.ant-drawer-content-wrapper {
+    width: 280px !important;
+}
+
+@media screen and (max-width: 768px) {
+
+    .courts-info h2,
+    p {
+        padding: 0 !important;
+    }
+
+    .CBC-content {
+        padding: 30px 20px;
+        margin-top: 200px;
+    }
+
+}

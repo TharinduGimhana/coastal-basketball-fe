@@ -1,0 +1,252 @@
+.league-structure-section {
+  background-color: #003366;
+  /* Navy blue background */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.league-title {
+  font-family: gameDay-Wide;
+  font-size: 40px;
+  color: white;
+}
+
+.league-content {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.league-subtitle {
+  font-family: gameDay-Light;
+  font-size: 30px;
+  color: white;
+  text-align: right;
+}
+
+.league-subtitle-left {
+  font-family: gameDay-Light;
+  font-size: 30px;
+  color: white;
+  text-align: left;
+}
+
+.line {
+  background-color: #A7192F;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.horizontal-line {
+  height: 2px;
+  width: 100%;
+}
+
+.connector-line {
+  width: 2px;
+  height: 100px;
+  margin: 0 auto;
+  position: absolute;
+  right: 50%;
+  top: 0;
+}
+
+.center-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon-section {
+  position: relative;
+}
+
+.icon-info {
+  font-size: 70px;
+  color: #A6192E;
+}
+
+.card-info {
+  padding: 20px 20px;
+  margin: 50px 10px;
+}
+
+.card-info-right {
+  padding: 20px 100px;
+  margin: 50px 10px;
+}
+
+.pcontent {
+  text-align: right;
+  font-family: ChakraPetch-SemiBold;
+  color: #ABBDCD;
+  padding-left: 200px;
+}
+
+.p-left {
+  text-align: left;
+  font-family: ChakraPetch-SemiBold;
+  color: #ABBDCD;
+  max-width: 400px;
+}
+
+.card-info:first-child {
+  position: relative;
+}
+
+.card-info-right:first-child {
+  position: relative;
+}
+
+.card-info:first-child::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  width: 120px;
+  height: 2px;
+  background-color: #A6192E;
+}
+
+
+.card-info:nth-child(2) {
+  position: relative;
+}
+
+/* For the connecting vertical line */
+.card-info:first-child::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  width: 2px;
+  height: calc(100% + 50px);
+  /* Extend the line to connect properly */
+  background-color: #A7192F;
+}
+
+.card-info-right:nth-child(1)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: calc(100% - 100px);
+  width: 122px;
+  height: 2px;
+  background-color: #A7192F;
+}
+
+
+.card-info:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  width: 120px;
+  height: 2px;
+  background-color: #A7192F;
+}
+
+@media screen and (max-width: 1500px) {
+  .pcontent {
+    text-align: right;
+    font-family: ChakraPetch-SemiBold;
+    color: #ABBDCD;
+    padding-left: 10px;
+  }
+
+  .card-info-right:nth-child(1)::after {
+    width: 50px;
+  }
+
+  .card-info-right:nth-child(1)::after {
+    right: calc(100% - 25px);
+  }
+
+  .card-info-right {
+    padding: 20px 10px;
+  }
+
+  .card-info:first-child::before,
+  .card-info:nth-child(2)::before {
+    width: 68px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .pcontent {
+    text-align: right;
+    font-family: ChakraPetch-SemiBold;
+    color: #ABBDCD;
+    padding-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .league-subtitle {
+    text-align: left;
+  }
+
+  .card-info-right {
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+
+  .pcontent {
+    text-align: left;
+  }
+
+  .card-info {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon-info {
+    display: none;
+  }
+
+  .card-info:first-child::after {
+    display: none !important;
+  }
+
+  .card-info:first-child::before {
+    display: none !important;
+  }
+
+  .card-info:nth-child(3)::before {
+    display: none !important;
+  }
+
+  .card-info:nth-child(2)::before {
+    display: none !important;
+  }
+
+  .card-info-right:nth-child(1)::after {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .league-structure-section {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 170px;
+  }
+
+  .league-structure-section .ant-row-middle {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .card-info-right .card-info-right-arrow {
+    display: none;
+  }
+
+  .league-title {
+    font-size: 30px;
+  }
+}

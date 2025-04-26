@@ -1,0 +1,46 @@
+.circle-image-button {
+    display: flex;
+    margin-left: 30px;
+}
+
+.feature-circle-rect {
+    width: 70px;
+    height: 70px;
+    padding: 13px 15px 0px 10px;
+    background-color: var(--navyColor);
+    
+    cursor: auto
+}
+.chat-circle-rect {
+    width: 70px;
+    height: 70px;
+    padding: 13px 15px 0px 10px;
+    background-color: var(--whiteColor);
+    cursor: auto
+}
+.feature-circle-rect:hover {
+    background-color: var(--navyColor);
+}
+
+@media screen and (max-width: 768px) {
+    .circle-image-button {
+        padding:3px 8px;
+        margin: 8px;
+        width: 30px;
+        height: 30px;
+    }
+    /* .circle-image {
+        width: 30px;
+        height: auto;
+    } */
+    .feature-circle-rect {
+        width: 40px;
+        height: 40px;
+        padding: 6px 36px 34px 8px;
+        background-color: var(--navyColor);
+        cursor: auto
+    }
+    .social-circle-rect img {
+        width: 40px;
+    }
+}

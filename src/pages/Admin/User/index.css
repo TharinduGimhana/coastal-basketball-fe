@@ -1,0 +1,25 @@
+.admin-user {
+    overflow-x: auto;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    overflow-y:hidden; 
+}
+
+.admin-user table {
+    width:1900px;
+}
+
+.status-badge {
+    /* color: white;
+    background-color:'#F83535', 
+    padding:'2px 10px', 
+    border:'none', 
+    width:'85px' */
+}
+
+
+.admin-user {
+    overflow-x: auto; /* Ensures that the table container itself is scrollable */
+    padding-bottom: 10px;
+  }
+  

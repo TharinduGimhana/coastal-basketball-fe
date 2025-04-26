@@ -1,0 +1,94 @@
+.programs-section {
+    padding: 50px !important;
+    margin: auto;
+    max-width: 1600px;
+}
+
+.academy-program-title {
+    font-family: gameDay-Wide;
+
+}
+
+.slide-subtitle-register {
+    margin: auto;
+    font-size: 14px;
+    color: white;
+    background-color: var(--mainRedColor);
+    padding: 6px 10px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: 1px solid var(--mainRedColor);
+    outline-offset: 2px;
+}
+
+.slide-subtitle-register:hover {
+    background-color: var(--mainRedColor);
+    color: white;
+    opacity: 0.7;
+}
+
+.program-detail {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.program-detail-more-text {
+    color: var(--mainBlueColor);
+    /* Ant Design's primary color */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.season-detail-modal .ant-modal {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 900px !important;
+    margin: auto;
+}
+
+.season-detail-modal .ant-modal .ant-modal-title {
+    font-size: 20px;
+    color: var(--mainBlueColor);
+}
+
+.season-detail-item-label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.season-detail-item-txt {}
+
+.txt-gst-info {
+    position: absolute;
+    top: 5px;
+    font-size: 12px;
+    color: red;
+}
+
+@media screen and (max-width: 1050px) {
+    .programs-section {
+        padding: 50px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .programs-section {
+        padding: 30px 20px !important;
+    }
+
+    .academy-programs {
+        /* margin-top: 170px; */
+        /* position: absolute; */
+    }
+
+    .txt-gst-info {
+        padding-bottom: 20px;
+        position: relative;
+    }
+}

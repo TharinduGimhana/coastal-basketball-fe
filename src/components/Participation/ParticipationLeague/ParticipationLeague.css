@@ -1,0 +1,11 @@
+.cbl-card {
+    font-family: ChakraPetch-Regular;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+    .cbl-section {
+        margin-top: 170px;
+    }
+}

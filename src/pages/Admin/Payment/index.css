@@ -1,0 +1,69 @@
+.payment-rect .ant-form-item-label {
+    width: 220px;
+}
+
+.payment-rect .ant-picker-outlined {
+    width: 100% !important;
+}
+
+.payment-rect .ant-form-item-row {
+    align-items: center;
+}
+.ant-modal {
+    width: 800px;
+}
+.payment-rect .ant-form-item-control {
+    /* height: 44px; */
+}
+
+.payment-rect .ant-select .ant-select-arrow {
+    height: 22px !important;
+}
+
+.payment-rect .ant-form-item-control-input {
+    min-height: 44px !important; 
+}
+
+.payment-rect .ant-form-item {
+    /* margin-bottom: 50px !important; */
+}
+
+.payment-rect .ant-form-item {
+    margin-bottom: 16px; 
+}
+
+.payment-rect .ant-col {
+    margin-top: 5px !important;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.btn-delete-season {
+    border: none;
+    background: none;
+    color: red;
+    font-size: 20px;
+}
+
+.btn-delete-season:hover {
+    background: none !important;
+    color: red !important;
+}
+
+.btn-edit-season {
+    background: none;
+    font-size: 20px;
+    border: none;
+    color: var(--mainBlueColor);
+}
+
+.btn-edit-season {
+    background: none !important;
+    color: var(--mainBlueColor) !important;
+}
+
+.ant-table-content {
+    overflow-x: auto;
+}

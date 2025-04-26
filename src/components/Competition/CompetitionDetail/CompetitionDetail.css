@@ -1,0 +1,16 @@
+.competition-cvontent h2 {
+    font-size: 28px;
+    font-family: ChakraPetch-Regular !important;
+}
+
+@media screen and (max-width: 1050px) {
+    .competition-cvontent h2 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .competition-cvontent h2 {
+        font-size: 20px;
+    }
+}

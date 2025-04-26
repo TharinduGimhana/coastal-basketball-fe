@@ -1,0 +1,42 @@
+.type-button-rect {
+    display: inline-block;
+    padding: 8px 24px;
+    border: 1px solid #a7192f;
+    border-radius: 6px;
+    margin: 10px;
+    text-align: center;
+    color: var(--whiteColor);
+    font-size: 16px;
+    cursor: pointer;
+    transition: 200ms all ease;
+    background-color: #a7192f;
+    font-family: ChakraPetch-Regular !important;
+    font-weight: 700;
+}
+.type-button-rect.checked { 
+    background-color: var(--mainColor);
+    color: white;
+    border: 1px solid var(--mainColor);
+}
+.type-button-rect:focus-visible {
+    outline: none;
+}
+.control-icon {
+    width: 26px;
+    height: 26px;
+    padding: 1px;
+}
+@media screen and (max-width: 768px) {
+    .type-button-rect {
+        border-radius: 12px;
+        padding: 6px 12px;
+        margin: 5px;
+        font-size: 13px;
+    }
+    .control-icon {
+        width: 20px !important;
+        height: 20px !important;
+        padding: 0px 2px !important;
+        border-radius: 4px !important;
+    }
+}

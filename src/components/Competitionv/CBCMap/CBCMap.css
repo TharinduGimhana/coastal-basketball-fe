@@ -1,0 +1,29 @@
+.CBC-map {
+    margin: 100px 50px;
+}
+
+.community-info {
+    margin: auto 0px;
+    text-align: center;
+    justify-content: center;
+}
+
+.community-info h2{
+    max-width: 700px;
+    font-size: 50px;
+    color: #013765;
+    font-family: "gameDay";
+    font-weight: bold;
+}
+
+.community-info h2 span {
+    color: #A7192F;
+}
+
+.community-info p {
+    font-size: 18px;
+    font-family: "gameDay";
+    font-weight: bold;
+    text-align: left;
+    padding-left: 100px;
+}
