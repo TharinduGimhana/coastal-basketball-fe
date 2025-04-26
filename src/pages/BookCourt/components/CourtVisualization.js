@@ -35,7 +35,9 @@ const CourtSection = styled(Box)(({ theme }) => ({
   marginTop: 0,
 }));
 
-const HalfCourt = styled(Box)(({ theme, isSelected, isReversed }) => ({
+const HalfCourt = styled(Box, {
+  shouldForwardProp: (prop) => prop !== 'isSelected' && prop !== 'isReversed' && prop !== 'selectedCourt'
+})(({ theme, isSelected, isReversed, selectedCourt }) => ({
   width: '100%',
   height: '100%',
   position: 'relative',
@@ -65,7 +67,7 @@ const HalfCourt = styled(Box)(({ theme, isSelected, isReversed }) => ({
       width: '100%',
       height: '134%',
       backgroundColor: '#0066CC',
-      opacity: isSelected ? 1 : 0.3,
+      opacity: (isSelected || selectedCourt === 'FULL COURT') ? 1 : 0.3,
       zIndex: 0,
     },
     '& .free-throw-circle': {
@@ -158,7 +160,7 @@ const CourtVisualization = ({ selectedCourt }) => {
       <CourtWrapper>
         <CourtSection>
           <Grid />
-          <HalfCourt isSelected={selectedCourt === 'HALF COURT 1'} isReversed={false}>
+          <HalfCourt isSelected={selectedCourt === 'HALF COURT 1'} isReversed={false} selectedCourt={selectedCourt}>
             <div className="court-lines">
               <div className="three-point-line" />
               <div className="key-area" />
@@ -171,7 +173,7 @@ const CourtVisualization = ({ selectedCourt }) => {
         <CenterCircle />
         <CourtSection>
           <Grid />
-          <HalfCourt isSelected={selectedCourt === 'HALF COURT 2'} isReversed={true}>
+          <HalfCourt isSelected={selectedCourt === 'HALF COURT 2'} isReversed={true} selectedCourt={selectedCourt}>
             <div className="court-lines">
               <div className="three-point-line" />
               <div className="key-area" />
