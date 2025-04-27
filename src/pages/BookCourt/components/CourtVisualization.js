@@ -13,6 +13,16 @@ const VisualizationContainer = styled(Box)(({ theme }) => ({
   alignItems: 'center',
   padding: '16px',
   overflow: 'visible',
+  '& .MuiGrid-container': {
+    boxSizing: 'border-box',
+    display: 'flex',
+    flexWrap: 'wrap',
+    width: 'calc(87% + 8px)',
+    flexDirection: 'row',
+    marginTop: '-8px',
+    marginLeft: '55px',
+    marginBottom: '24px',
+  },
 }));
 
 const ShootingBaysContainer = styled(Box)(({ theme }) => ({
