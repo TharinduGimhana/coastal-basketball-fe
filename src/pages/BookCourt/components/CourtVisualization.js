@@ -29,7 +29,7 @@ const ShootingBaysContainer = styled(Box)(({ theme }) => ({
 const ShootingBay = styled(Box)(({ theme, isSelected }) => ({
   width: '48%',
   height: '100%',
-  backgroundColor: isSelected ? '#0066CC' : '#333',
+  backgroundColor: isSelected ? '#1B4C98' : '#333',
   // opacity: isSelected ? 1 : 0.3,
   display: 'flex',
   alignItems: 'center',
@@ -112,7 +112,7 @@ const HalfCourt = styled(Box, {
       transform: 'translateX(-50%)',
       width: '100%',
       height: '140%',
-      backgroundColor: isSelected ? '#0066CC' : '#333',
+      backgroundColor: isSelected ? '#1B4C98' : '#333',
       // opacity: (isSelected || selectedCourt === 'FULL COURT') ? 1 : 0.3,
       zIndex: 0,
     },
