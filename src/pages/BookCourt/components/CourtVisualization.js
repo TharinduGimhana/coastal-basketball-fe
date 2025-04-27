@@ -12,6 +12,7 @@ const VisualizationContainer = styled(Box)(({ theme }) => ({
   flexDirection: 'column',
   alignItems: 'center',
   padding: '16px',
+  overflow: 'visible',
 }));
 
 const ShootingBaysContainer = styled(Box)(({ theme }) => ({
@@ -21,13 +22,15 @@ const ShootingBaysContainer = styled(Box)(({ theme }) => ({
   display: 'flex',
   justifyContent: 'space-between',
   marginBottom: '16px',
+  zIndex: 100,
+  transform: 'translateZ(0)',
 }));
 
 const ShootingBay = styled(Box)(({ theme, isSelected }) => ({
   width: '48%',
   height: '100%',
-  backgroundColor: '#0066CC',
-  opacity: isSelected ? 1 : 0.3,
+  backgroundColor: isSelected ? '#0066CC' : '#333',
+  // opacity: isSelected ? 1 : 0.3,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -37,6 +40,20 @@ const ShootingBay = styled(Box)(({ theme, isSelected }) => ({
   fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
   lineHeight: 1.5,
   letterSpacing: '0.00938em',
+  position: 'relative',
+  zIndex: 1,
+  transform: 'translateZ(0)',
+  '& .free-throw-circle': {
+    position: 'absolute',
+    bottom: '0%',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    width: '42%',
+    height: '42%',
+    border: '2px solid rgb(255, 255, 255)',
+    borderRadius: '208px 208px 0 0',
+    opacity: 1,
+  },
 }));
 
 const CourtWrapper = styled(Box)(({ theme }) => ({
@@ -46,6 +63,7 @@ const CourtWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
   gap: '100px',
+  zIndex: 1,
 }));
 
 const CourtSection = styled(Box)(({ theme }) => ({
@@ -80,7 +98,7 @@ const HalfCourt = styled(Box, {
       transform: 'translateX(-50%)',
       width: '80%',
       height: '70%',
-      border: '2px solid rgba(255, 255, 255, 0.7)',
+      border: '2px solid rgb(255, 255, 255)',
       borderRadius: '0 0 180px 180px',
       zIndex: 1,
     },
@@ -94,19 +112,19 @@ const HalfCourt = styled(Box, {
       transform: 'translateX(-50%)',
       width: '100%',
       height: '140%',
-      backgroundColor: '#0066CC',
-      opacity: (isSelected || selectedCourt === 'FULL COURT') ? 1 : 0.3,
+      backgroundColor: isSelected ? '#0066CC' : '#333',
+      // opacity: (isSelected || selectedCourt === 'FULL COURT') ? 1 : 0.3,
       zIndex: 0,
     },
     '& .free-throw-circle': {
       position: 'absolute',
-      bottom: '80%',
+      bottom: '73%',
       left: '50%',
       transform: 'translateX(-50%)',
-      width: '40%',
-      height: '25%',
-      border: '2px solid rgba(255, 255, 255, 0.7)',
-      borderRadius: '0 0 208px 208px ',
+      width: '20%',
+      height: '32%',
+      border: '2px solid rgb(255, 255, 255)',
+      borderRadius: '0 0 50px 50px ',
       zIndex: 1,
     },
     '& .basket': {
@@ -114,7 +132,7 @@ const HalfCourt = styled(Box, {
       bottom: '100%',
       left: '50%',
       transform: 'translateX(-50%)',
-      width: '8%',
+      width: '4%',
       height: '4%',
       backgroundColor: 'rgba(255, 255, 255, 0.7)',
       zIndex: 1,
@@ -187,9 +205,11 @@ const CourtVisualization = ({ selectedCourt }) => {
     <VisualizationContainer>
       <ShootingBaysContainer>
         <ShootingBay isSelected={selectedCourt === 'SHOOTING BAY 1'}>
+          <div className="free-throw-circle" />
           SHOOTING BAY 1
         </ShootingBay>
         <ShootingBay isSelected={selectedCourt === 'SHOOTING BAY 2'}>
+          <div className="free-throw-circle" />
           SHOOTING BAY 2
         </ShootingBay>
       </ShootingBaysContainer>
